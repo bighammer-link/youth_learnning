@@ -1,11 +1,11 @@
 import requests, re, json
 
-# 设置代理
+# 设置代理，这个地方先不用改，代理失效的话再修改
 proxy = {'https': 'https://127.0.0.1:7890'}
 #填写openid，可以是多个账号的，多个账号的请用英文逗号隔开
-openids = ['ohz9Mt3Aqt_qtoG6FbCnkdU4OOxM']
+openids = ['']
 #server推送方式
-SCKEY = 'SCT180477TOZkGM0Zqetd8Oyy4Y6QPp37J'
+SCKEY = ''
 
 
 #  获取最新一期大学习的版本号
@@ -98,6 +98,7 @@ def passInfo(SCKEY,proxy,openids):
                     requests.post("https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY,"青年大学习",content))
             else:
                 content = '学习失败，请检查问题'
+                print(content)
                 if SCKEY != '':
                     requests.post("https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY, "青年大学习", content))
         else:
