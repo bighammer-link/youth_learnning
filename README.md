@@ -1,7 +1,7 @@
 # 自动完成青年大学习
 ## 声明：👀该脚本代码主要参考<a href = "https://github.com/captain686/Youth-Learning">captain686|Youth-Learning</a>👀<br/>
 
-> 机器人项目地址
+>我把其中关键代码拿了出来，放到了一个脚本文件中。并且增加了查询学习记录功能，如果最新一期的大学习版本号和当前已经学过的版本号不一致则代表未进行学习，则进行学习。
 >
 > <https://github.com/Mrs4s/go-cqhttp>
 
