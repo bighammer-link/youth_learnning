@@ -42,9 +42,10 @@
 > > 
 > >  5.  筛选抓包历史中的 `POST`请求可以找到 `openid`<br/>
 > (IOS没有样图，不要问为什么，问就是没有iphone😅😅😅)<br/>
-> >  你也可以选择使用电脑微信抓包<br/>
-> > 电脑抓包可以使用<a href = 'https://www.wireshark.org/'>WireShark</a>，使用方法，自行百度。
-> >  
+> br/>
+>  你也可以选择使用电脑微信抓包<br/>
+>  电脑抓包可以使用<a href = 'https://www.wireshark.org/'>WireShark</a>，使用方法，自行百度。
+>   
 >
 ## 关于 `mian.py`
 需要修改的地方只有下面几个地方：<br/>
