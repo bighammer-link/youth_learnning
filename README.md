@@ -1,8 +1,5 @@
-# youth_learnning
-
-------
-
-🤖 使用 `go-CQHttp`QQ机器人做推送
+# 自动完成青年大学习
+## 声明：👀该脚本代码主要参考<a href = "https://github.com/captain686/Youth-Learning">captain686|Youth-Learning</a>👀<br/>
 
 > 机器人项目地址
 >
