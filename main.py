@@ -55,8 +55,7 @@ def get_PersonStudyRecord(person_openid,proxy):
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
     # 因为是是要获取你个人的学习记录，所以要求有openid
-    data = {'openid': person_openid,
-            'year':2022}
+    data = {'openid': person_openid}
     response = requests.post(url, data=data, headers=headers, verify=False, timeout=5, proxies=proxy)
     if response.status_code == 200:
         result = json.loads(response.text)
