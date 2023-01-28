@@ -66,6 +66,9 @@ SCKEY = ''
  2.你如果拥有自己的服务器的话，可以部署在<b><a href="https://github.com/whyour/qinglong">青龙面板</a></b>上或者是<b><a href =   "https://github.com/elecV2/elecV2P">elecV2P</a></b>上，作者都在使用的两个工具，推荐青龙面板，比较好操作。<br/>
  3.放在GitHub Action上面，这个稍微麻烦一点，而且GitHub官方抵制 GitHub Action的滥用，容易暴毙。不推荐<br/>
  4.还有很多种方法，可自行上网查询。<br/>
-因为我们使用了代理，所以说理论上这些方法都可以。作者是在阿里云的服务器上搭建的青龙面板，部署在上面的。
+因为我们使用了代理，所以说理论上这些方法都可以。作者是在阿里云的服务器上搭建的青龙面板，部署在上面的。<br/>
+
+
+[![Stargazers over time](https://starchart.cc/bighammer-link/youth_learnning.svg)](https://starchart.cc/bighammer-link/youth_learnning)
 
 ### 有问题，请提issues
