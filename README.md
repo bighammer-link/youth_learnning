@@ -69,6 +69,6 @@ SCKEY = ''
 因为我们使用了代理，所以说理论上这些方法都可以。作者是在阿里云的服务器上搭建的青龙面板，部署在上面的。<br/>
 
 
-[![Stargazers over time](https://starchart.cc/bighammer-link/youth_learnning.svg)](https://starchart.cc/wd210010/just_for_happy)
+
 
 ### 有问题，请提issues
