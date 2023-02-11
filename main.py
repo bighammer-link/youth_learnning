@@ -30,7 +30,7 @@ def getNewestVersionInfo(proxy):
         response = requests.post(url, headers=headers, verify=False, timeout=20, proxies=proxy)
         if response.status_code == 200:
             result = json.loads(response.text)
-            # print('最新版本是：{}'.format(result['version']))
+            print('最新版本是：{}'.format(result['version']))
             return result['version']
         return ''
     except:
@@ -59,7 +59,7 @@ def get_PersonStudyRecord(person_openid,proxy):
     response = requests.post(url, data=data, headers=headers, verify=False, timeout=5, proxies=proxy)
     if response.status_code == 200:
         result = json.loads(response.text)
-        # print('已经学习到：{}版本'.format(result['vds'][0]['version']))
+        print('已经学习到：{}版本'.format(result['vds'][0]['version']))
         return result['vds'][0]['version']
     return ''
 
