@@ -88,7 +88,8 @@ def passInfo(SCKEY,proxy,openids):
     # 多个账号的openid,逐个进行学习
     for person_openid in openids:
         last_vn = get_PersonStudyRecord(person_openid,proxy)
-        data = {'openid':person_openid}
+        data = {'openid': person_openid,
+                'version': nst_vn}
         if nst_vn != last_vn:
             response = requests.post(url=url,headers=headers,data=data,verify=False, timeout=5, proxies=proxy)
             if response.status_code == 200 and response.json()["errcode"] == "0":
