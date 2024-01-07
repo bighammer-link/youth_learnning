@@ -2,11 +2,14 @@ import requests, re, json
 
 # 设置代理，这个地方先不用改，代理失效的话再修改
 proxy = {'https': 'https://127.0.0.1:7890'}
-#填写openid，可以是多个账号的，多个账号的请用英文逗号隔开
+# 填写openid，可以是多个账号的，多个账号的请用英文逗号隔开
 openids = ['']
-#server推送方式
+# server酱推送方式
 SCKEY = ''
-
+# pushplus推送
+Token = ''
+# QQ推送
+Qmsg = ''
 
 #  获取最新一期大学习的版本号
 def getNewestVersionInfo(proxy):
@@ -95,19 +98,32 @@ def passInfo(SCKEY,proxy,openids):
             if response.status_code == 200 and response.json()["errcode"] == "0":
                 content = '{}已经完成本期大学习（当前版本：{}）'.format(person_openid,nst_vn)
                 print(content)
-                if SCKEY !='':
-                    requests.post("https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY,"青年大学习",content))
+                push(content)
             else:
                 content = '学习失败，请检查问题'
                 print(content)
-                if SCKEY != '':
-                    requests.post("https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY, "青年大学习", content))
+                push(content)
         else:
             content = '大学习还未更新（当前版本：{}）'.format(nst_vn)
             print(content)
-            if SCKEY != '':
-                requests.post("https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY,"青年大学习",content))
-
+            push(content)
+# 推送函数
+def push(content):
+    if SCKEY != '':
+        url = "https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(SCKEY, '青年大学习', content)
+        requests.post(url)
+        print('推送完成')
+    elif Token != '':
+        headers = {'Content-Type': 'application/json'}
+        json = {"token": Token, 'title': '青年大学习', 'content': content, "template": "json"}
+        resp = requests.post(f'http://www.pushplus.plus/send', json=json, headers=headers).json()
+        print('push+推送成功' if resp['code'] == 200 else 'push+推送失败')
+    elif Qmsg !='' :
+        url = "https://qmsg.zendee.cn/send/{}?msg={}".format(Qmsg, content)
+        resp = requests.post(url)
+        print('QQ推送成功')
+    else:
+        print("未使用任何推送方式")
 
 if __name__ == "__main__":
-    passInfo(SCKEY,proxy,openids)
+    passInfo(SCKEY, proxy, openids)
