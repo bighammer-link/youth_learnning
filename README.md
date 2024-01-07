@@ -11,7 +11,7 @@
 ### 🚀推送方式🚀
 （不想使用的话，直接忽略）<br/>
 <b>三种推送方式：前两种是向微信推送，后面一种是向QQ推送<br/>
-</b><a href = 'https://sct.ftqq.com/'>Server酱</a>，<a href = "https://www.pushplus.plus/">Pushplus</a>,<a href = "https://qmsg.zendee.cn/">Qmsg酱</a><br/>
+</b><a href = 'https://sct.ftqq.com/'>Server酱</a>，<a href = "https://www.pushplus.plus/">Pushplus</a>,  <a href = "https://qmsg.zendee.cn/">Qmsg酱</a><br/>
 任意选择上面的一种推送方式，进去官网，获取KEY（如何获取：官网都有文档，看不懂的话直接百度）
 > 🍷🍷🍷在以下情况下会向你的微信发送通知：🍷🍷🍷<br/>
 > >1.完成最新一期的大学习后<br/>
