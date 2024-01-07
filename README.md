@@ -71,8 +71,8 @@ SCKEY = ''
  4.还有很多种方法，可自行上网查询。<br/>
 因为我们使用了代理，所以说理论上这些方法都可以。作者是在阿里云的服务器上搭建的青龙面板，部署在上面的。<br/>
 
-##Ummmmmmm...<br/>
-实在什么都不懂的，不会搞的，可以加下面QQ
+## Ummmmmmm...<br/>
+实在什么都不懂的，不会搞的，可以加下面QQ><br/>
 <a href = "https://github.com/bighammer-link/youth_learnning/blob/main/img/qrcode.png">点这里</a><br/>
 我可以帮你代挂或者提供帮助（有偿（微微小偿））
 
