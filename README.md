@@ -57,8 +57,13 @@
 proxy = {'https': 'https://127.0.0.1:7890'}
 #填写openid，可以是多个账号，多个账号的请用英文逗号隔开，例如'AA','BB'
 openids = ['']
-#server推送方式，如果不想使用的话，直接忽略
+#下面是三种推送方式，使用哪一种就把对应的key填入其中，不想使用的话直接忽略
+# server酱推送方式
 SCKEY = ''
+# pushplus推送
+Token = ''
+# QQ推送
+Qmsg = ''
 ```
 
 
