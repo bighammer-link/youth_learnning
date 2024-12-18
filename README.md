@@ -79,7 +79,7 @@ Qmsg = ''
 ## Ummmmmmm...<br/>
 实在什么都不懂的，不会搞的，可以加下面QQ><br/>
 <a href = "https://github.com/bighammer-link/youth_learnning/blob/main/img/qrcode.png">点这里</a><br/>
-我可以帮你代挂或者提供帮助（有偿（微微小偿））
+我可以提供帮助
 
 
 
